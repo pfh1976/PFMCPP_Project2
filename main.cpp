@@ -87,13 +87,12 @@ void variableDeclarations()
     long numberOfSandGrains = 999999;
     long registeredVoters = 1456899;
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
-    ignoreUnused(digit, decade, multiple);
-    ignoreUnused(temperature, soundDecibel, soundFrequency);
-    ignoreUnused(isStable, isComplete, isUndefined);
-    ignoreUnused(letter, underScore, numberString);
-    ignoreUnused(multiplicationResult, numerator, speedOfSound);
-    ignoreUnused(totalNumberOfDirections, numberOfSandGrains, registeredVoters);
+    ignoreUnused(number, digit, decade, multiple, 
+        temperature, soundDecibel, soundFrequency, 
+        isStable, isComplete, isUndefined, 
+        letter, underScore, numberString, 
+        multiplicationResult, numerator, speedOfSound, 
+        totalNumberOfDirections, numberOfSandGrains, registeredVoters); //passing each variable declared to the ignoreUnused() function
     
 }
 
@@ -234,15 +233,9 @@ int main()
     //10)
     auto didItPlay = playGuitar('C', 5);
     
-    ignoreUnused(carRented);
-    ignoreUnused(myRoom);
-    ignoreUnused(isKeyWordPressed);
-    ignoreUnused(result);
-    ignoreUnused(output);
-    ignoreUnused(isSameLetter);
-    ignoreUnused(numberOfSteps);
-    ignoreUnused(didItPlay);
-
+    ignoreUnused(carRented, myRoom, isKeyWordPressed, 
+        result, output, isSameLetter, numberOfSteps, 
+        didItPlay);
     
     std::cout << "good to go!" << std::endl;
     return 0;    
